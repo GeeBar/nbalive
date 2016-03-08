@@ -4,7 +4,7 @@ var util = require("../lib/util");
 var fs = require("fs");
 var path = require("path");
 
-var defaultDate = util.format(new Date());
+var defaultDate = util.formatToday(new Date());
 var Rank = require('../lib/rank');
 var App = require("../lib/app");
 
@@ -23,7 +23,7 @@ if (program.rank) {
 
 function checkDate(aDate) {
     if (/^\d{4}[-\/]\d{1,2}[-\/]\d{1,2}/.test(aDate)) {
-        return util.format(new Date(aDate));
+        return util.formatToday(new Date(aDate));
     } else {
         return defaultDate;
     }
