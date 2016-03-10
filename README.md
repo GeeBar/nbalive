@@ -26,12 +26,12 @@ NBA live in terminal.
 ```
 ## Example
 	$ nbalive  //当天赛程
-	$ nbalive -d 2014-12-01 //指定某天赛程
+	$ nbalive -d 20141201//指定某天赛程<del>2014-12-01<del> 
 	$ nbalive -r //查看排名
 	$ nbalive --help //查看帮助
 	
 	
-## Bugs&Fix
+## Bugs&Fix&Update
 ###赛程
 * 原作者的服务端没有更新，数据缺失——更换获取赛程为http://m.hupu.com/nba/game 的一个AJAX接口
 

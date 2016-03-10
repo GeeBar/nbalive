@@ -22,8 +22,8 @@ if (program.rank) {
 
 
 function checkDate(aDate) {
-    if (/^\d{4}[-\/]\d{1,2}[-\/]\d{1,2}/.test(aDate)) {
-        return util.formatToday(new Date(aDate));
+    if (/^\d{4}\d{1,2}\d{1,2}/.test(aDate)) {
+        return util.formatToday(new Date(aDate.slice(0,4), aDate.slice(4,6) - 1, aDate.slice(6,8)));
     } else {
         return defaultDate;
     }
